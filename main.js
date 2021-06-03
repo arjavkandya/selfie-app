@@ -18,7 +18,7 @@ function start(){
 }
 function speak(){
     var synth=window.speechSynthesis;
-    speak_data=document.getElementById("textbox").value;
+    speak_data="taking a selfie in 5 seconds"
     var utterThis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
     Webcam.attach(camera);
